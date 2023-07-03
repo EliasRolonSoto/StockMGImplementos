@@ -21,9 +21,9 @@ namespace StockMenu
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (txtCantidad.Text != null && txtNombre.Text != null && cbTipo.SelectedIndex != null)
+            if (txtCantidad.Text != string.Empty && txtNombre.Text != string.Empty && cbTipo.SelectedItem != string.Empty)
             {
-                var eliminar = new RepoDbBusiness();
+                var eliminar = new StockBusiness();
                 var producto = new Producto()
                 {
                     NombreProducto = txtNombre.Text,

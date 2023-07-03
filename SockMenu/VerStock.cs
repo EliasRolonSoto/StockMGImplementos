@@ -13,11 +13,11 @@ namespace StockMenu
 {
     public partial class VerStock : Form
     {
-        private RepoDbBusiness _productos;
+        private StockBusiness _productos;
         public VerStock()
         {
             InitializeComponent();
-            _productos = new RepoDbBusiness();
+            _productos = new StockBusiness();
         }
 
         private void VerStock_Load(object sender, EventArgs e)

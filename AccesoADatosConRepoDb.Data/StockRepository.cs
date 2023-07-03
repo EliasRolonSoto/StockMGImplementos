@@ -4,10 +4,10 @@ using RepoDb;
 
 namespace AccesoADatosConRepoDb.Data
 {
-    public class RepoDbRepository
+    public class StockRepository
     {
         //Para hacerlo por capas tenemos que poner la configuracion global en el constructor.
-        public RepoDbRepository() 
+        public StockRepository() 
         {
             GlobalConfiguration
                 .Setup()

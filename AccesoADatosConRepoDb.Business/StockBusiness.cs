@@ -3,13 +3,13 @@ using AccesoADatosConRepoDb.Entities;
 
 namespace AccesoADatosConRepoDb.Business
 {
-    public class RepoDbBusiness
+    public class StockBusiness
     {
-        private RepoDbRepository _dataAccessRepoDbRepository;
+        private StockRepository _dataAccessRepoDbRepository;
 
-        public RepoDbBusiness()
+        public StockBusiness()
         {
-            _dataAccessRepoDbRepository = new RepoDbRepository();
+            _dataAccessRepoDbRepository = new StockRepository();
         }
         public List<Producto> TraerProductos()
         {

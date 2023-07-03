@@ -26,9 +26,9 @@ namespace StockMenu
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (txtCantidad.Text != null && txtNombre.Text != null && cbTipo.SelectedIndex != null)
+            if (txtCantidad.Text != string.Empty && txtNombre.Text != string.Empty && cbTipo.SelectedItem != string.Empty)
             {
-                var agregar = new RepoDbBusiness();
+                var agregar = new StockBusiness();
                 var producto = new Producto()
                 {
                     NombreProducto = txtNombre.Text,
